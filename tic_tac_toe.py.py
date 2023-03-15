@@ -45,14 +45,14 @@ def check_for_victory():
     name = player.name
 
     won = (
-    (board[0][0].text == name and board[1][0].text == name and board[2][0].text == name) or # across the bottom
-    (board[0][1].text == name and board[1][1].text == name and board[2][1].text == name) or # across the middle
-    (board[0][2].text == name and board[1][2].text == name and board[2][2].text == name) or # across the top
-    (board[0][0].text == name and board[0][1].text == name and board[0][2].text == name) or # down the left side
-    (board[1][0].text == name and board[1][1].text == name and board[1][2].text == name) or # down the middle
-    (board[2][0].text == name and board[2][1].text == name and board[2][2].text == name) or # down the right side
-    (board[0][0].text == name and board[1][1].text == name and board[2][2].text == name) or # diagonal /
-    (board[0][2].text == name and board[1][1].text == name and board[2][0].text == name))   # diagonal \
+    (board[0][0].text == name and board[1][0].text == name and board[2][0].text == name) or 
+    (board[0][1].text == name and board[1][1].text == name and board[2][1].text == name) or 
+    (board[0][2].text == name and board[1][2].text == name and board[2][2].text == name) or 
+    (board[0][0].text == name and board[0][1].text == name and board[0][2].text == name) or 
+    (board[1][0].text == name and board[1][1].text == name and board[1][2].text == name) or 
+    (board[2][0].text == name and board[2][1].text == name and board[2][2].text == name) or 
+    (board[0][0].text == name and board[1][1].text == name and board[2][2].text == name) or 
+    (board[0][2].text == name and board[1][1].text == name and board[2][0].text == name))  
 
     if won:
         print('winner is:', name)
